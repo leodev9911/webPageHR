@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Bebas Neue';
+}
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    padding: 28px 68px 0px 68px;
+    background-image: url(./assets/pictures/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.opacity {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 94px;
+    z-index: 10;
+    margin-bottom: 160px;
+}
+nav > a > img {
+    width: 186px;
+    height: 94px;
+}
+.header__unordered-list {
+    display: flex;
+    list-style: none;
+    gap: 26px;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #FFF;
+}
+header > h1 {
+    font-size: 6rem;
+    color: #FFF1E0;
+    font-weight: 400;
+    z-index: 20;
+}
+header > p {
+    font-size: 2.4rem;
+    color: #FFF1E0;
+    font-weight: 400;
+    z-index: 20;
+    margin-bottom: 40px;
+}
+.social-media__links {
+    display: flex;
+    z-index: 10;
+    gap: 30px;
+}
+.social-media__links > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFF1E0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-media__links > a > img {
+    filter: invert(98%) sepia(19%) saturate(1609%) hue-rotate(298deg) brightness(113%) contrast(97%);
+}
